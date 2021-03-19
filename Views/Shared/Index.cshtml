@@ -1,0 +1,13 @@
+﻿@model HomeViewModel
+
+
+<h2>Избранная недвижимость</h2>
+<div class="row mt-5 mb-4">
+    @{
+        foreach (Realty realt in Model.favRealty)
+        {
+            @Html.Partial("AllRealty", realt)
+        }
+
+    }
+</div> 

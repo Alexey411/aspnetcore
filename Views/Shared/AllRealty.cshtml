@@ -1,0 +1,15 @@
+﻿@model WA20.Models.Realty
+
+<div>
+    <img class="galery-pic" src="@Model.img" alt="" />
+</div>
+<div class="col-md-8">
+    <h3 class="inline">@Model.room,</h3>
+    <h3 class="inline">@Model.floor,</h3>
+    <h3 class="inline">@Model.squares</h3>
+    <p class="">@Model.adress</p>
+    <p>@Model.metro</p>
+    <p>@Model.shortDesc</p>
+    <span class="btn-tel">@Model.phone</span>
+</div>
+<p class="price">@Model.price.ToString("c")</p> 

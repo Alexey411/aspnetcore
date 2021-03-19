@@ -1,0 +1,12 @@
+﻿@model RealtyListViewModel
+<h2>Вся недвижимость</h2>
+<h3>@Model.currCategory</h3>
+<div class="row mt-5 mb-4">
+    @{
+        foreach (Realty realt in Model.allRealty)
+        {
+            @Html.Partial("AllRealty", realt)
+        }
+            
+    }
+</div> 
